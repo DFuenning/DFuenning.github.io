@@ -1,0 +1,230 @@
+/* --- STYLES FOR ALL PAGES --- */
+body {
+  /* Typography */
+  font-family: 'Saira Semi Condensed', "Helvetica Neue", Helvetica, sans-serif;
+
+
+  /* Visual */
+  /* background-image: linear-gradient() */
+}
+
+
+html {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100%;
+}
+
+/* add space for fixed nav */
+main {
+  margin: 40px 0;
+}
+
+/* create styles for use for all white main boxes */
+.block {
+  background-color: #fff;
+
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+.year-span {
+  font-size: 1.15rem;
+  color: gray;
+}
+
+.block-header {
+  /* Typography */
+  color: #903749;
+  font-weight: bold;
+}
+
+#headshot {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* NAV START */
+#logo {
+
+  /* Typography */
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+
+}
+
+span {
+  color: #903749; 
+}
+
+/* override bootstrap hover color and border */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #4aaaa5;
+}
+
+nav {
+  /* background-color: #dbe2ef; */
+  border: none;
+}
+
+.social-icons {
+  padding: 0.25rem;
+}
+
+.social-icons:hover{
+  opacity: 0.5;
+}
+
+/* media query for nav background color change */
+@media only screen and (max-width: 767px) and (max-width: 992px) {
+  .navbar-header {
+    background-color: #4aaaa5;
+  }
+  .block{
+    padding: 0;
+    margin: auto;
+  }
+
+  .portfolio-main {
+    padding: auto;
+    margin: auto;
+    align-items: center;
+  }
+
+  .form-main {
+    padding: 0;
+    margin: 0;
+  }
+  .social-icons {
+    padding: 0;
+    margin: 0;
+  }
+
+  .collapse {
+    align-items: center;
+  }
+
+}
+/* END NAV */
+
+
+/* CONNECT W/ ME CSS */
+.connect-header {
+  /* Typography */
+  font-size: 25px;
+}
+
+.connect-photo {
+  /* Box-model */
+  width: 55px;
+  height: 55px;
+}
+
+#images {
+  /* Box-model */
+  padding-top: 15px;
+
+  /* Typography */
+  text-align: center;
+}
+/* END CONNECT W/ ME */
+
+
+/* BEGIN FOOTER */
+.footer {
+  /* Positioning */
+  position: fixed;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+  /* Visual */
+  background-color: #3f72af;
+}
+
+.text-muted-footer {
+  /* Box-model */
+  margin-top: 15px;
+
+  /* Typography */
+  color: #fff;
+}
+
+
+.two-toned-footer-color {
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+  background-color: #dbe2ef;
+}
+/* END FOOTER */
+/* --- END STYLES FOR ALL PAGES --- */
+
+/* --- PAGE-SPECIFIC STYLES --- */
+/* ABOUT-ME PAGE */
+.about-me-header {
+  /* Positioning */
+  margin-bottom: 33px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 32px;
+  font-weight: bold;
+  color: #4aaaa5;
+}
+
+#about-image {
+  /* Positioning */
+  float: left;
+
+  /* Box-model */
+  width: 200px;
+  margin: 0 20px 10px 0;
+}
+/* END ABOUT-ME PAGE */
+
+
+/* PORTFOLIO PAGE */
+
+
+.port-image {
+  margin: 20px auto;
+}
+/* END PORTFOLIO PAGE */
+
+
+/* CONTACT FORM PAGE  */
+.form-control {
+  /* give input boxes right angles */
+  border-radius: 0;
+
+  /* keep from horizontally resizing text area */
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.submit-btn {
+  /* Box-model */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+
+  /* Typography */
+  color: #fff;
+
+  /* Visual */
+  background-color: #3f72af;
+  border: 0;
+}
+
+.submit-btn:hover {
+  opacity: .7;
+}
+
+/* END CONTACT FORM PAGE */
